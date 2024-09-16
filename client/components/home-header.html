@@ -1,34 +1,71 @@
 <header id="home-header">
-    <!--Banner-->
-    <section class="banner-holder pt-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="banner-content text-center text-white my-5 pt-5 pb-5">
-                        <div>
-                            <h1 class="banner-text-header">Welcome to Campus Cafeteria!<br></h1>
-                            <p class="banner-text"><i>"Where Every Meal Feels Like Home."</i></p>
-                            <p class="banner-text">
-                                You can order online to collect, request for delivery or visit us on-site so that you
-                                Indulge in a Variety of Delicious Dishes and Enjoy a Memorable Dining Experience!<br><br>
-                                Register with us to make orders and receive all our exclusive deals.
-                            </p>
-                        </div>
-                        <a 
-                            href="#" 
-                            class="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#subscribe-modal">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
-                            </svg>
-                            Sign Up
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark small border-bottom shadow-sm fixed-top custom-nav" style="--bs-bg-opacity: .9;">
+        <div class="container-fluid">
+            <!-- Logo Image -->
+            <a href="index.html" class="navbar-brand pb-2">
+                <img style="width: 45px;" src="src/img/logo_white.png" alt="Campus Cafeteria Logo">
+            </a>
+            <!-- Brand Name -->
+            <a href="index.html" class="navbar-brand pb-0">
+                <span class="brand-style brand-gradient">
+                    Campus Cafeteria
+                </span>
+            </a>
+            <!-- Navbar Toggler -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Menus -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu-section" class="nav-link text-white">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-white">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
                         </a>
-                    </div>
-                </div>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="aboutUsDropdown">
+                            <li><a href="#" class="dropdown-item">Careers</a></li>
+                            <li><a href="#" class="dropdown-item">Our Mission</a></li>
+                            <li><a href="#" class="dropdown-item">Our Vision</a></li>
+                            <li><a href="#" class="dropdown-item">Our Values</a></li>
+                            <li><a href="#" class="dropdown-item">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>  
             </div>
+            <!-- Search, Profile, Cart -->
+            <form class="d-flex align-items-center" role="search">
+                <div class="input-group">
+                    <input type="search" class="form-control form-control-sm" placeholder="Search...">
+                    <button type="submit" class="btn btn-sm btn-success">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <div class="profile ms-3">
+                    <a href="#" class="btn btn-sm btn-success">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+                <div class="btn-cart ms-3">
+                    <a href="#" class="btn btn-sm btn-success cart-icon">
+                        <i class="bi bi-cart3"></i>
+                        <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    </a>
+                </div>
+            </form>
         </div>
-    </section>
-    <!--Banner-->
+    </nav>
 </header>
+
+
+
 

@@ -1,12 +1,46 @@
-/* Home Page Header Styles */
-#home-header .jumbotron {
-    background: url('path-to-your-image.jpg') no-repeat center center;
+.banner-holder, .main-page-header {
+    background-image: url(src/img/banner-2.jpg);
     background-size: cover;
-    color: white;
-    padding: 100px 25px;
+    background-position: bottom;
+    height: 600px;
+    object-fit: cover;
 }
 
-#home-header .btn-primary {
-    background-color: #28a745;
-    border-color: #28a745;
+/* Banner Text Font */
+@font-face {
+    font-family: 'Brielle';
+    src: url(src/fonts/Brielle-Regular.ttf');
+}
+
+.banner-text-header {
+    font-family: 'Brielle', sans-serif;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.banner-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.custom-nav {
+    backdrop-filter: blur(8px);
+}
+
+.banner-holder, .main-page-header {
+    background-image: url('../src/img/banner-2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    object-fit: cover;
 }
