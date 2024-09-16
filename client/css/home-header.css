@@ -1,0 +1,12 @@
+/* Home Page Header Styles */
+#home-header .jumbotron {
+    background: url('path-to-your-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 25px;
+}
+
+#home-header .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
