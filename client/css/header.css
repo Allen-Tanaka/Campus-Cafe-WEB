@@ -101,17 +101,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
     }
 
     /* Ensure the logo and company name are aligned in the same row */
     .navbar-brand {
+        flex-grow: 1;
         display: flex;
         align-items: center;
     }
 
     .navbar-brand img {
-        margin-right: 5cqw; /* Reduce space between logo and company name */
+        margin-right: 0cqw; /* Reduce space between logo and company name */
     }
 
     .navbar-brand span {
@@ -122,6 +122,9 @@
     /* Ensure the navbar-toggler fits perfectly in the same row */
     .navbar-toggler {
         margin-left: auto;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='white' d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z'/%3E%3C/svg%3E");
     }
 
 }
