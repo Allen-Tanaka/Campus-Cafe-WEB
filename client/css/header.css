@@ -110,7 +110,7 @@
     }
 
     .navbar-brand img {
-        margin-right: 2cqw; /* Reduce space between logo and company name */
+        margin-right: 8cqw; /* Reduce space between logo and company name */
     }
 
     .navbar-brand span {
