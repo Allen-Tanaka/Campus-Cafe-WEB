@@ -101,6 +101,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px;
     }
 
     /* Ensure the logo and company name are aligned in the same row */
@@ -110,7 +111,7 @@
     }
 
     .navbar-brand img {
-        margin-right: 8cqw; /* Reduce space between logo and company name */
+        margin-right: 5cqw; /* Reduce space between logo and company name */
     }
 
     .navbar-brand span {
