@@ -95,21 +95,6 @@
     padding: 5px 10px;
 }
 
-/*@media (max-width: 768px) {
-    .navbar {
-        padding: 10px;
-    }
-
-    .navbar-brand {
-        flex-grow: 1;
-    }
-
-    
-    .navbar-toggler {
-        margin-left: auto;
-    }
-} */
-
 /* Adjustments for small screens */
 @media (max-width: 768px) {
     .navbar {
@@ -125,7 +110,7 @@
     }
 
     .navbar-brand img {
-        margin-right: 5cqw; /* Reduce space between logo and company name */
+        margin-right: 2cqw; /* Reduce space between logo and company name */
     }
 
     .navbar-brand span {
