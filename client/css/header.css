@@ -12,8 +12,13 @@
     white-space: nowrap;
 }
 
+/* Toggler button and icon styles */
 .navbar-toggler {
-    border-color: #BBBDAF;
+    border-color: #ffffff; /* Set the border color of the toggler button to white */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='white' d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z'/%3E%3C/svg%3E");
 }
 
 .custom-nav {
@@ -90,7 +95,7 @@
     padding: 5px 10px;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .navbar {
         padding: 10px;
     }
@@ -99,7 +104,39 @@
         flex-grow: 1;
     }
 
+    
     .navbar-toggler {
         margin-left: auto;
     }
+} */
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Ensure the logo and company name are aligned in the same row */
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        margin-right: 5cqw; /* Reduce space between logo and company name */
+    }
+
+    .navbar-brand span {
+        text-align: center;
+        flex-grow: 1; /* Center the company name between the logo and toggler */
+    }
+
+    /* Ensure the navbar-toggler fits perfectly in the same row */
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
 }
+
