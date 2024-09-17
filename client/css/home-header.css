@@ -1,39 +1,4 @@
-.banner-holder, .main-page-header {
-    background-image: url(src/img/banner-2.jpg);
-    background-size: cover;
-    background-position: bottom;
-    height: 600px;
-    object-fit: cover;
-}
-
-/* Banner Text Font */
-@font-face {
-    font-family: 'Brielle';
-    src: url(src/fonts/Brielle-Regular.ttf');
-}
-
-.banner-text-header {
-    font-family: 'Brielle', sans-serif;
-    font-size: 36px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.banner-text {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.banner-content p {
-    font-size: 18px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-/* Navbar Styles */
+/* Header Styles */
 @font-face {
     font-family: 'Concrete';
     src: url('../src/fonts/concrete.ttf');
@@ -47,32 +12,33 @@
     white-space: nowrap;
 }
 
-.navbar {
-    padding: 10px 10px;
-    background-color: rgba(52, 58, 64, 0.9);
-    color: #ffffff;
+/* Toggler button and icon styles */
+.navbar-toggler {
+    padding: 5px; /* Reduce padding for a smaller toggler */
+    font-size: 0.875rem; /* Optional: Adjust font size if necessary */
+    border-color: #ffffff; /* Set the border color of the toggler button to white */
+}
+
+.navbar-toggler-icon {
+    width: 20px; /* Smaller icon size */
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z'/%3E%3C/svg%3E");
 }
 
 .custom-nav {
     backdrop-filter: blur(8px);
-    background-color: rgba(52, 58, 64, 0.9);
-}
-
-.navbar-toggler {
-    padding: 5px; /* Smaller padding for the button */
-    border-color: #ffffff;
-}
-
-.navbar-toggler-icon {
-    width: 20px; /* Smaller icon */
-    height: 20px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5.5 0 0 1 0 1h-13z'/%3E%3C/svg%3E");
 }
 
 .navbar-nav .nav-link {
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #ffffff !important; /* Ensure white text on dark background */
+}
+
+.navbar {
+    padding: 10px 10px;
+    background-color: rgba(52, 58, 64, 0.9);
+    color: #ffffff;
 }
 
 .cart-icon {
@@ -129,26 +95,8 @@
     font-size: 18px;
 }
 
-/* Fix alignment of the navbar elements */
-.navbar-brand {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-brand img {
-    margin-right: 5px; /* Reduce space between logo and company name */
-}
-
-.navbar-brand span {
-    text-align: center;
-    flex-grow: 1; /* Center the company name between the logo and toggler */
-}
-
-/* Ensure the navbar-toggler fits perfectly in the same row */
 .navbar-toggler {
-    margin-left: auto;
-    padding: 5px; /* Adjust padding to make the toggler smaller */
+    padding: 5px 10px;
 }
 
 /* Adjustments for small screens */
@@ -159,13 +107,31 @@
         align-items: center;
     }
 
+    /* Ensure the logo and company name are aligned in the same row */
+    .navbar-brand {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        margin-right: 5px; /* Reduce space between logo and company name */
+    }
+
+    .navbar-brand span {
+        text-align: center;
+        flex-grow: 1; /* Center the company name between the logo and toggler */
+    }
+
+    /* Ensure the navbar-toggler fits perfectly in the same row */
     .navbar-toggler {
         margin-left: auto;
         padding: 5px; /* Adjust padding to make the toggler smaller */
     }
 
     .navbar-toggler-icon {
-        width: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z'/%3E%3C/svg%3E");
+        width: 20px; /* Adjust icon size to fit better */
         height: 20px;
     }
 }
