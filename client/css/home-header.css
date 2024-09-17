@@ -129,27 +129,34 @@
     font-size: 18px;
 }
 
+/* Fix alignment of the navbar elements */
+.navbar-brand {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 5px; /* Reduce space between logo and company name */
+}
+
+.navbar-brand span {
+    text-align: center;
+    flex-grow: 1; /* Center the company name between the logo and toggler */
+}
+
+/* Ensure the navbar-toggler fits perfectly in the same row */
+.navbar-toggler {
+    margin-left: auto;
+    padding: 5px; /* Adjust padding to make the toggler smaller */
+}
+
 /* Adjustments for small screens */
 @media (max-width: 768px) {
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .navbar-brand {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar-brand img {
-        margin-right: 5px; /* Reduce space between logo and company name */
-    }
-
-    .navbar-brand span {
-        text-align: center;
-        flex-grow: 1;
     }
 
     .navbar-toggler {
