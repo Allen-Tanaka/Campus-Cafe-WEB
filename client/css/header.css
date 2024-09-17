@@ -115,45 +115,23 @@
     }
 
     .navbar-brand img {
-        margin-right: 3px; /* Reduce space between logo and company name */
-        width: 35px; /* Optionally reduce the logo size for smaller screens */
+        margin-right: 5px; /* Reduce space between logo and company name */
     }
 
     .navbar-brand span {
         text-align: center;
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        flex-grow: 1; /* Center the company name between the logo and toggler */
     }
 
     /* Ensure the navbar-toggler fits perfectly in the same row */
     .navbar-toggler {
         margin-left: auto;
-        padding: 3px; /* Further reduce padding for smaller toggler */
+        padding: 5px; /* Adjust padding to make the toggler smaller */
     }
 
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z'/%3E%3C/svg%3E");
-        width: 20px;
+        width: 20px; /* Adjust icon size to fit better */
         height: 20px;
-    }
-}
-
-/* Special handling for very small mobile dimensions like 344x822 */
-@media (max-width: 400px) {
-    .navbar-brand img {
-        margin-right: 2px; /* Minimize the space between logo and company name further */
-        width: 30px; /* Reduce logo size more */
-    }
-
-    .navbar-brand span {
-        font-size: 0.9rem; /* Reduce the font size of the company name */
-    }
-
-    .navbar-toggler {
-        padding: 2px; /* Further reduce padding to fit everything in one row */
-    }
-
-    .navbar-toggler-icon {
-        width: 18px; /* Make the toggler icon even smaller */
-        height: 18px;
     }
 }
