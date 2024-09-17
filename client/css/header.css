@@ -135,3 +135,12 @@
         height: 20px;
     }
 }
+
+/* HIDE Search, Cart, and Profile Icons on Mobile */
+@media (max-width: 768px) {
+    .navbar .profile,
+    .navbar .btn-cart,
+    .navbar .input-group {
+        display: none !important; /* Hide these elements on mobile with !important to enforce the rule */
+    }
+}
