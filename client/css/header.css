@@ -100,47 +100,48 @@
 }
 
 /* Adjustments for small screens */
+/* Mobile-specific styles */
 @media (max-width: 768px) {
+    /* Adjust navbar layout for mobile */
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px;
     }
 
-    /* Ensure the logo and company name are aligned in the same row */
-    .navbar-brand {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-    }
-
+    /* Ensure the logo is on the far left */
     .navbar-brand img {
-        margin-right: 5px; /* Reduce space between logo and company name */
+        margin-right: 10px;
+        flex-shrink: 0; /* Prevent the logo from shrinking */
     }
 
+    /* Center the company name between the logo and toggler */
     .navbar-brand span {
-        text-align: center;
-        flex-grow: 1; /* Center the company name between the logo and toggler */
+        flex-grow: 1; /* Allow the brand name to take up available space */
+        text-align: center; /* Center the text */
+        font-size: 24px; /* Keep the original font size */
+        margin: 0;
+        white-space: nowrap; /* Prevent wrapping */
     }
 
-    /* Ensure the navbar-toggler fits perfectly in the same row */
+    /* Ensure the toggler stays on the far right */
     .navbar-toggler {
         margin-left: auto;
-        padding: 5px; /* Adjust padding to make the toggler smaller */
+        padding: 5px 10px; /* Adjust padding for better appearance */
+        flex-shrink: 0; /* Prevent the toggler from shrinking */
     }
 
     .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z'/%3E%3C/svg%3E");
-        width: 20px; /* Adjust icon size to fit better */
+        width: 20px;
         height: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 12.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z'/%3E%3C/svg%3E");
     }
-}
 
-/* HIDE Search, Cart, and Profile Icons on Mobile */
-@media (max-width: 768px) {
+    /* Hide the search, profile, and cart icons on mobile */
     .navbar .profile,
     .navbar .btn-cart,
     .navbar .input-group {
-        display: none !important; /* Hide these elements on mobile with !important to enforce the rule */
+        display: none !important;
     }
 }
