@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'No build process required for this project'"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +19,6 @@
     "popper.js": "^1.16.1"
   }
 }
+
 
 
