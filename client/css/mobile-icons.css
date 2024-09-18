@@ -1,0 +1,76 @@
+/* Mobile Icon Bar styles */
+.mobile-icon-bar {
+    background-color: #f8f9fa; /* Solid background color */
+    padding: 34px 34px; /* Padding around the icons */
+    border-bottom: 1px solid #ddd; /* Border to separate from the navbar */
+    position: fixed; /* Make it fixed so it stays at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between the icons */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for depth */
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between; /* Evenly space the icons */
+    width: 100%; /* Take up full width to distribute icons evenly */
+    max-width: 400px; /* Optional: Limit maximum width for large devices */
+}
+
+/* Remove the blue underline from the icon links */
+.icon-link {
+    text-decoration: none; /* Removes the underline from the links */
+    color: inherit; /* Inherits the color, so the icon color isn't affected */
+}
+
+/* Adjust mobile icons to match logo and toggler sizes */
+.icon-link i {
+    font-size: 24px; /* Match this to the size of the logo and toggler */
+    width: 10px;     /* Adjust width to match the size of the toggler if necessary */
+    height: 10px;    /* Match the height as well */
+    padding: 5px;    /* Adjust padding to match the logo and toggler */
+    color: #333;     /* Keep the icon color consistent */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Ensure the icons take up equal space */
+}
+
+/* Adjust logo and toggler styles for reference */
+.navbar-brand img {
+    height: 40px; /* Same as icon height */
+}
+
+.navbar-toggler {
+    font-size: 24px; /* Match the font size */
+    width: 40px;     /* Match the size to ensure consistency */
+    height: 40px;
+    padding: 5px;
+}
+
+/* Adjust the margin for the navbar and main content */
+@media (max-width: 768px) {
+    .navbar {
+        margin-top: 40px; /* Add margin to push the navbar below the fixed icon bar */
+    }
+
+    body {
+        padding-top: 60px; /* Ensure body content doesn't overlap the fixed bar */
+    }
+}
+
+/* Hide the mobile icon bar for larger screens */
+@media (min-width: 769px) {
+    .mobile-icon-bar {
+        display: none;
+    }
+}
+
+
