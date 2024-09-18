@@ -1,0 +1,49 @@
+/* mobile-header.css */
+
+/* Ensure this only applies to screens below 768px */
+@media (max-width: 768px) {
+    .mobile-header-section {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .mobile-header-section .input-group {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .mobile-header-section .mobile-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .mobile-header-section .profile,
+    .mobile-header-section .btn-cart {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48%; /* Adjust width for proper spacing */
+    }
+
+    .mobile-header-section .cart-icon {
+        position: relative;
+        font-size: 18px;
+    }
+
+    .mobile-header-section .cart-count {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: #dc3545;
+        color: #ffffff;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 12px;
+    }
+}
