@@ -1,30 +1,67 @@
 /* banner.css */
-.banner-holder, .main-page-header {
-    background-image: url(../src/img/banner-2.jpg);
+.banner-holder {
+    width: 100%;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     height: 600px;
     object-fit: cover;
 }
 
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .banner-text-header {
     font-family: 'Brielle', sans-serif;
-    font-size: 36px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 42px;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 .banner-text {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 20px;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .banner-content p {
-    font-size: 18px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    margin-bottom: 20px;
 }
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Specific images for each slide */
+.carousel-item.active,
+.carousel-item:first-child {
+    background-image: url('../src/img/Banner.jpg'); /* Dark-themed image for first slide */
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url('../src/img/banner-2.jpg'); /* Dark-themed image for second slide */
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('../src/img/burgers.jpeg'); /* Dark-themed image for third slide */
+}
+
 

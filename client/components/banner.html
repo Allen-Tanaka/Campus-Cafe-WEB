@@ -1,31 +1,101 @@
 <!-- banner.html -->
-<section class="banner-holder pt-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="banner-content text-center text-white my-5 pt-5 pb-5">
-                    <div>
-                        <h1 class="banner-text-header">Welcome to Campus Cafeteria!</h1>
-                        <p class="banner-text"><i>"Where Every Meal Feels Like Home."</i></p>
-                        <p class="banner-text">
-                            You can order online to collect, request for delivery, or visit us on-site so that you
-                            indulge in a variety of delicious dishes and enjoy a memorable dining experience!<br><br>
-                            Register with us to make orders and receive all our exclusive deals.
-                        </p>
+<section id="banner-slider" class="carousel slide banner-holder pt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="banner-content text-center text-white my-5 pt-5 pb-5">
+                            <div>
+                                <h1 class="banner-text-header">Welcome to Campus Cafeteria!</h1>
+                                <p class="banner-text"><i>"Where Every Meal Feels Like Home."</i></p>
+                                <p class="banner-text">
+                                    You can order online to collect, request for delivery, or visit us on-site so that you
+                                    indulge in a variety of delicious dishes and enjoy a memorable dining experience!<br><br>
+                                    Register with us to explore our exclusive menu.
+                                </p>
+                            </div>
+                            <a 
+                                href="#" 
+                                class="btn btn-outline-light"
+                                data-bs-toggle="modal"
+                                data-bs-target="#menu-modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                                    <path d="M7.25 3.5a.75.75 0 1 0 0 1.5h5.5a.75.75 0 1 0 0-1.5h-5.5zm0 3a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5zM6 10.75A.75.75 0 0 1 6.75 10h5.5a.75.75 0 0 1 0 1.5h-5.5A.75.75 0 0 1 6 10.75zm-3.5-2A.75.75 0 0 1 4.25 9h.5A.75.75 0 0 1 5.5 10h-1A.75.75 0 0 1 3.25 9.75zM4 7.75A.75.75 0 0 1 4.75 7h.5A.75.75 0 0 1 6 7.75h-1A.75.75 0 0 1 4 7.75zm.25-1.5A.75.75 0 0 1 5 5.5h6A.75.75 0 0 1 11 7H5.5z"/>
+                                </svg>
+                                Explore Menu
+                            </a>
+                        </div>
                     </div>
-                    <a 
-                        href="#" 
-                        class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#subscribe-modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
-                        </svg>
-                        Sign Up
-                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="banner-content text-center text-white my-5 pt-5 pb-5">
+                            <div>
+                                <h1 class="banner-text-header">Discover Our Specials</h1>
+                                <p class="banner-text"><i>"Fresh, Healthy, and Delicious"</i></p>
+                                <p class="banner-text">
+                                    Check out our chef's specials, prepared daily using fresh, local ingredients!<br><br>
+                                    Explore our menu and make your next meal an unforgettable experience.
+                                </p>
+                            </div>
+                            <a 
+                                href="#"
+                                class="btn btn-outline-light"
+                                data-bs-toggle="modal"
+                                data-bs-target="#menu-modal">
+                                <i class="fas fa-utensils"></i> Explore Menu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Slide -->
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="banner-content text-center text-white my-5 pt-5 pb-5">
+                            <div>
+                                <h1 class="banner-text-header">Order Online</h1>
+                                <p class="banner-text"><i>"Fast & Convenient"</i></p>
+                                <p class="banner-text">
+                                    Skip the wait and order your favorite dishes online! Fast delivery or easy pickup options available.<br><br>
+                                    Start your order today and enjoy!
+                                </p>
+                            </div>
+                            <a 
+                                href="#"
+                                class="btn btn-outline-light"
+                                data-bs-toggle="modal"
+                                data-bs-target="#menu-modal">
+                                <i class="fas fa-shopping-cart"></i> Explore Menu
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#banner-slider" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#banner-slider" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
 </section>
+
 
