@@ -1,43 +1,40 @@
-// Helper function to dynamically load CSS files
-function loadCSS(filePath) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = filePath;
-    document.head.appendChild(link);
+// Function to load a component and its associated CSS file
+function loadComponent(componentUrl, cssUrl, containerSelector, callback) {
+    // Load the HTML component
+    fetch(componentUrl)
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector(containerSelector).outerHTML = html;
+
+            // Load the CSS for the component
+            if (cssUrl) {
+                const linkElement = document.createElement('link');
+                linkElement.rel = 'stylesheet';
+                linkElement.href = cssUrl;
+                document.head.appendChild(linkElement);
+            }
+
+            // Call the callback function after loading the component
+            if (callback) {
+                callback();
+            }
+        })
+        .catch(error => {
+            console.error('Error loading component:', componentUrl, error);
+        });
 }
 
-// Function to load the home header
+// Function to load the header component
 function loadHomeHeader(callback) {
-    fetch('components/home-header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector('header').innerHTML = data;
-            loadCSS('css/home-header.css'); // Load the home header CSS
-            if (callback) callback();
-        })
-        .catch(error => console.error('Error loading home header:', error));
+    loadComponent('components/header.html', 'css/header.css', 'header', callback);
 }
 
-// Function to load the footer
+// Function to load the footer component
 function loadFooter(callback) {
-    fetch('components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector('footer').innerHTML = data;
-            loadCSS('css/footer.css'); // Load the footer CSS
-            if (callback) callback();
-        })
-        .catch(error => console.error('Error loading footer:', error));
+    loadComponent('components/footer.html', 'css/footer.css', 'footer', callback);
 }
 
-// Function to load the menu section
+// Function to load the menu component
 function loadMenuSection(callback) {
-    fetch('components/menu.html')
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector('#menu-section').innerHTML = data;
-            loadCSS('css/menu.css'); // Load the menu CSS
-            if (callback) callback();
-        })
-        .catch(error => console.error('Error loading menu section:', error));
+    loadComponent('components/menu.html', 'css/menu.css', '#menu-section', callback);
 }
