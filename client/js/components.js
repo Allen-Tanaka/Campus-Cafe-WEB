@@ -29,12 +29,17 @@ function loadHomeHeader(callback) {
     loadComponent('components/header.html', 'css/header.css', 'header', callback);
 }
 
-// Function to load the footer component
-function loadFooter(callback) {
-    loadComponent('components/footer.html', 'css/footer.css', 'footer', callback);
-}
+// Function to load the banner component
+loadMenuSection(function() {
+    loadComponent('components/banner.html', 'css/banner.css', '#banner-section');
+});
 
 // Function to load the menu component
 function loadMenuSection(callback) {
     loadComponent('components/menu.html', 'css/menu.css', '#menu-section', callback);
+}
+
+// Function to load the footer component
+function loadFooter(callback) {
+    loadComponent('components/footer.html', 'css/footer.css', 'footer', callback);
 }
