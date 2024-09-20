@@ -1,14 +1,30 @@
 /* banner.css */
 .banner-holder {
     width: 100%;
+    height: 100vh; /* Full height to cover the screen */
     background-size: cover;
     background-position: center;
-    height: 600px;
     object-fit: cover;
 }
 
+.carousel-item {
+    height: 100vh; /* Ensure each slide is full-height */
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Maintain slide positioning */
+}
+
 .banner-content {
-    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 2; /* Ensure the content stays on top */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    background: rgba(0, 0, 0, 0.5); /* Optional: dark background overlay */
     padding: 20px;
     border-radius: 10px;
 }
@@ -18,12 +34,14 @@
     font-size: 42px;
     color: #fff;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
 }
 
 .banner-text {
     font-size: 20px;
     color: #f1f1f1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
 }
 
 .banner-content p {
@@ -44,22 +62,42 @@
     color: #000;
 }
 
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block; /* Bootstrap's default behavior ensures only the active item is shown */
+    position: relative;
+    z-index: 1; /* Ensure slides are stacked in order */
+}
+
 .carousel-item {
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+    display: none; /* Hide all other slides */
+    z-index: 0;
+}
+
+.carousel-item.active {
+    display: block; /* Show the active slide */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 3; /* Ensure controls are above the slides */
 }
 
 /* Specific images for each slide */
 .carousel-item.active,
 .carousel-item:first-child {
-    background-image: url('../src/img/Banner.jpg'); /* Dark-themed image for first slide */
+    background-image: url('../src/img/Banner.jpg'); /* Image for first slide */
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url('../src/img/banner-2.jpg'); /* Dark-themed image for second slide */
+    background-image: url('../src/img/banner-2.jpg'); /* Image for second slide */
 }
 
 .carousel-item:nth-child(3) {
-    background-image: url('../src/img/burgers.jpeg'); /* Dark-themed image for third slide */
+    background-image: url('../src/img/burgers.jpeg'); /* Image for third slide */
+}
+
+/* Ensure the third slide doesn't stay on top */
+.carousel-item:not(.active) {
+    z-index: 0; /* All non-active items should be behind */
 }
