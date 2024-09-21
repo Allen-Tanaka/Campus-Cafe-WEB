@@ -1,0 +1,74 @@
+<!-- banner.html -->
+<section id="banner-section">
+    <!-- Image Background Carousel (Fading Effect) -->
+    <div id="image-carousel" class="carousel carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"></div>
+            <div class="carousel-item"></div>
+            <div class="carousel-item"></div>
+        </div>
+    </div>
+
+    <!-- Text Carousel (Sliding Effect) -->
+    <div id="text-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First Slide Text -->
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="banner-content text-center text-white my-5 pt-5 pb-5">
+                                <h1 class="banner-text-header">Welcome to Campus Cafeteria!</h1>
+                                <p class="banner-text"><i>"Where Every Meal Feels Like Home."</i></p>
+                                <p class="banner-text">You can order online to collect, request delivery, or visit us on-site!</p>
+                                <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#menu-modal">Explore Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Slide Text -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="banner-content text-center text-white my-5 pt-5 pb-5">
+                                <h1 class="banner-text-header">Discover Our Specials</h1>
+                                <p class="banner-text"><i>"Fresh, Healthy, and Delicious"</i></p>
+                                <p class="banner-text">Check out our chef's specials prepared daily with fresh ingredients!</p>
+                                <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#menu-modal">Explore Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Slide Text -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="banner-content text-center text-white my-5 pt-5 pb-5">
+                                <h1 class="banner-text-header">Order Online</h1>
+                                <p class="banner-text"><i>"Fast & Convenient"</i></p>
+                                <p class="banner-text">Skip the wait and order your favorite dishes online for fast delivery or pickup!</p>
+                                <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#menu-modal">Explore Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls for Text & Image Sync -->
+        <a class="carousel-control-prev" href="#text-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#text-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</section>
