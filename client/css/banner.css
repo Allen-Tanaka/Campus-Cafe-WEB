@@ -108,7 +108,8 @@
 @media (max-width: 768px) {
     .carousel-item {
         height: 100vh; /* Full viewport height */
-        padding-top: 0; /* Remove padding for mobile */
+        padding-top: 0px; /* Remove padding for mobile */
+        margin-top: -50px;
         background-size: cover; /* Ensure the background covers the whole container */
         background-position: center; /* Center the background image */
     }
