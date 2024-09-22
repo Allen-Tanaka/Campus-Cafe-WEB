@@ -96,7 +96,7 @@
 }
 
 .carousel-item:nth-child(3) {
-    background-image: url('../src/img/burgers.jpeg'); /* Image for third slide */
+    background-image: url('../src/img/banner-3.jpg'); /* Image for third slide */
 }
 
 /* Ensure the third slide doesn't stay on top */
